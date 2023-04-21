@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Index } from "./pages/Index/Index";
+import { Browse } from "./pages/Browse/Browse";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Index />,
+  },
+  {
+    path: "/browse",
+    element: <Browse />,
   },
 ]);
 
