@@ -3,6 +3,9 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Index } from "./pages/Index/Index";
 import { Browse } from "./pages/Browse/Browse";
+import initializeTranslations from "./i18n";
+
+initializeTranslations();
 
 const router = createBrowserRouter([
   {

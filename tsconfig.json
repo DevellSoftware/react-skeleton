@@ -19,7 +19,9 @@
     "paths": {
       "@skeleton/*": ["src/skeleton/*"],
       "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@elements/*": ["src/elements/*"]
     }
   },
   "include": ["src"],
