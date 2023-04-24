@@ -1,10 +1,14 @@
 import { Contact } from "@components/Contact/Contact";
+import { Title } from "@components/Title/Title";
 import { SideMenu } from "@elements/SideMenu/SideMenu";
 import { ContentBrowseLayout } from "@skeleton/layout/ContentBrowseLayout/ContentBrowseLayout";
 import { Flex } from "@skeleton/ui/Flex/Flex";
 import { Input } from "@skeleton/ui/Input/Input";
+import { useTranslation } from "react-i18next";
 
 export const Browse = () => {
+  const { t } = useTranslation();
+
   const side = <SideMenu />;
 
   const search = (
@@ -15,6 +19,7 @@ export const Browse = () => {
 
   const content = (
     <>
+      <Title>{t("contacts.browse.title")}</Title>
       <Flex>
         <Contact name="John Harnold" />
         <Contact name="John Harnold" />
